@@ -12,9 +12,17 @@
 		68AA46F61CEB9D2A003C668F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AA46F41CEB9D2A003C668F /* Main.storyboard */; };
 		68AA46F81CEB9D2A003C668F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68AA46F71CEB9D2A003C668F /* Assets.xcassets */; };
 		68AA46FB1CEB9D2A003C668F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AA46F91CEB9D2A003C668F /* LaunchScreen.storyboard */; };
+		68AA47041CEB9E87003C668F /* org.Iolani.Test1.c in Sources */ = {isa = PBXBuildFile; fileRef = 68AA47031CEB9E87003C668F /* org.Iolani.Test1.c */; };
+		68AA47061CEB9EE1003C668F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AA47051CEB9EE1003C668F /* SystemConfiguration.framework */; };
+		68AA47081CEB9F22003C668F /* ATKMathWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AA47071CEB9F22003C668F /* ATKMathWidget.framework */; };
+		68AA470A1CEB9F37003C668F /* ATKMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AA47091CEB9F37003C668F /* ATKMath.framework */; };
+		68AA470C1CEB9F44003C668F /* ATKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AA470B1CEB9F44003C668F /* ATKCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		68AA470E1CEBA004003C668F /* ATKMathWidget.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68AA470D1CEBA004003C668F /* ATKMathWidget.bundle */; };
+		68AA47101CEBA023003C668F /* resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68AA470F1CEBA023003C668F /* resources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6883C9C01CED06AC00518400 /* MyCertificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCertificate.h; path = "../../../Downloads/MyScript_ATK-ios-2/Samples/MyCertificate.h"; sourceTree = "<group>"; };
 		68AA46ED1CEB9D2A003C668F /* Test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AA46F01CEB9D2A003C668F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68AA46F21CEB9D2A003C668F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,14 @@
 		68AA46F71CEB9D2A003C668F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68AA46FA1CEB9D2A003C668F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68AA46FC1CEB9D2A003C668F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AA47021CEB9E87003C668F /* Test1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test1-Bridging-Header.h"; sourceTree = "<group>"; };
+		68AA47031CEB9E87003C668F /* org.Iolani.Test1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = org.Iolani.Test1.c; sourceTree = SOURCE_ROOT; };
+		68AA47051CEB9EE1003C668F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		68AA47071CEB9F22003C668F /* ATKMathWidget.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKMathWidget.framework; path = "../../Downloads/MyScript_ATK-ios-2/Frameworks/ATKMathWidget.framework"; sourceTree = "<group>"; };
+		68AA47091CEB9F37003C668F /* ATKMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKMath.framework; path = "../../Downloads/MyScript_ATK-ios-2/Frameworks/ATKMath.framework"; sourceTree = "<group>"; };
+		68AA470B1CEB9F44003C668F /* ATKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ATKCore.framework; path = "../../Downloads/MyScript_ATK-ios-2/Frameworks/ATKCore.framework"; sourceTree = "<group>"; };
+		68AA470D1CEBA004003C668F /* ATKMathWidget.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ATKMathWidget.bundle; path = "../../Downloads/MyScript_ATK-ios-2/Frameworks/ATKMathWidget.bundle"; sourceTree = "<group>"; };
+		68AA470F1CEBA023003C668F /* resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = resources.bundle; path = "../../Downloads/MyScript_ATK-ios-2/Samples/MathWidgetSample/MathWidgetSample/Resources/resources.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AA47061CEB9EE1003C668F /* SystemConfiguration.framework in Frameworks */,
+				68AA47081CEB9F22003C668F /* ATKMathWidget.framework in Frameworks */,
+				68AA470A1CEB9F37003C668F /* ATKMath.framework in Frameworks */,
+				68AA470C1CEB9F44003C668F /* ATKCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +58,12 @@
 		68AA46E41CEB9D2A003C668F = {
 			isa = PBXGroup;
 			children = (
+				68AA470F1CEBA023003C668F /* resources.bundle */,
+				68AA470D1CEBA004003C668F /* ATKMathWidget.bundle */,
+				68AA470B1CEB9F44003C668F /* ATKCore.framework */,
+				68AA47091CEB9F37003C668F /* ATKMath.framework */,
+				68AA47071CEB9F22003C668F /* ATKMathWidget.framework */,
+				68AA47051CEB9EE1003C668F /* SystemConfiguration.framework */,
 				68AA46EF1CEB9D2A003C668F /* Test1 */,
 				68AA46EE1CEB9D2A003C668F /* Products */,
 			);
@@ -54,12 +80,15 @@
 		68AA46EF1CEB9D2A003C668F /* Test1 */ = {
 			isa = PBXGroup;
 			children = (
+				6883C9C01CED06AC00518400 /* MyCertificate.h */,
+				68AA47031CEB9E87003C668F /* org.Iolani.Test1.c */,
 				68AA46F01CEB9D2A003C668F /* AppDelegate.swift */,
 				68AA46F21CEB9D2A003C668F /* ViewController.swift */,
 				68AA46F41CEB9D2A003C668F /* Main.storyboard */,
 				68AA46F71CEB9D2A003C668F /* Assets.xcassets */,
 				68AA46F91CEB9D2A003C668F /* LaunchScreen.storyboard */,
 				68AA46FC1CEB9D2A003C668F /* Info.plist */,
+				68AA47021CEB9E87003C668F /* Test1-Bridging-Header.h */,
 			);
 			path = Test1;
 			sourceTree = "<group>";
@@ -122,6 +151,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AA47101CEBA023003C668F /* resources.bundle in Resources */,
+				68AA470E1CEBA004003C668F /* ATKMathWidget.bundle in Resources */,
 				68AA46FB1CEB9D2A003C668F /* LaunchScreen.storyboard in Resources */,
 				68AA46F81CEB9D2A003C668F /* Assets.xcassets in Resources */,
 				68AA46F61CEB9D2A003C668F /* Main.storyboard in Resources */,
@@ -135,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AA47041CEB9E87003C668F /* org.Iolani.Test1.c in Sources */,
 				68AA46F31CEB9D2A003C668F /* ViewController.swift in Sources */,
 				68AA46F11CEB9D2A003C668F /* AppDelegate.swift in Sources */,
 			);
@@ -249,10 +281,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/ipad/Downloads/MyScript_ATK-ios-2/Frameworks";
 				INFOPLIST_FILE = Test1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.iolani.Test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Test1/Test1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,10 +301,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/ipad/Downloads/MyScript_ATK-ios-2/Frameworks";
 				INFOPLIST_FILE = Test1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.iolani.Test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Test1/Test1-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +335,7 @@
 				68AA47011CEB9D2A003C668F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
