@@ -9,9 +9,7 @@
 import UIKit
 //import CoreGraphics
 
-
-
-class ViewController: UIViewController{
+class ViewController: UIViewController, MAWMathViewDelegate{
     
     @IBOutlet var mathView: MAWMathView!
     var certificateRegistered : Bool!;
@@ -27,8 +25,7 @@ class ViewController: UIViewController{
         // Register as delegate to be notified of configuration, recognition, ...
         if((certificateRegistered) != nil)
         {
-            mathView.delegate = self.mathView.delegate;
-            
+            mathView.delegate = self;
             _ = NSBundle.mainBundle()
             
             var bundlePath : NSString = NSBundle.mainBundle().pathForResource("resources", ofType: "bundle")!
@@ -42,6 +39,8 @@ class ViewController: UIViewController{
             // "standard" references the configuration name in math.conf
             
             mathView.configureWithBundle("math", andConfig: "standard");
+            
+            
         }
     }
     
@@ -73,6 +72,10 @@ class ViewController: UIViewController{
         NSLog("Math Widget recognition: %@", mathView.resultAsText());
     }
 
+    func mathViewDidEndWriting(mathView: MAWMathView ){
+        NSLog("Math Widget End Writing: %@", mathView.resultAsText());
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
